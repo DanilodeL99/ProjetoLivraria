@@ -43,7 +43,7 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.grpRecomendados = new System.Windows.Forms.GroupBox();
             this.chkMoggador = new System.Windows.Forms.CheckBox();
             this.chkDev = new System.Windows.Forms.CheckBox();
@@ -187,15 +187,15 @@
             this.btnCalcular.UseVisualStyleBackColor = true;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // btnSair
+            // btnVoltar
             // 
-            this.btnSair.Location = new System.Drawing.Point(651, 404);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(95, 34);
-            this.btnSair.TabIndex = 15;
-            this.btnSair.Text = "SAIR";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnVoltar.Location = new System.Drawing.Point(651, 404);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(95, 34);
+            this.btnVoltar.TabIndex = 15;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // grpRecomendados
             // 
@@ -301,7 +301,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.grpRecomendados);
-            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnNovo);
@@ -345,7 +345,7 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.GroupBox grpRecomendados;
         private System.Windows.Forms.CheckBox chkMoggador;
         private System.Windows.Forms.CheckBox chkDev;

@@ -21,14 +21,14 @@ namespace ProjetoLivraria
         {
             Pedido pedido = new Pedido();
             pedido.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
             menu.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }
