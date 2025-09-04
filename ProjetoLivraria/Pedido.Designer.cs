@@ -45,8 +45,13 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.grpRecomendados = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.chkMoggador = new System.Windows.Forms.CheckBox();
+            this.chkDev = new System.Windows.Forms.CheckBox();
+            this.chkBrutal = new System.Windows.Forms.CheckBox();
+            this.chkYuri = new System.Windows.Forms.CheckBox();
+            this.chkFaust = new System.Windows.Forms.CheckBox();
+            this.chkCurso = new System.Windows.Forms.CheckBox();
+            this.chkFezCurso = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.grpRecomendados.SuspendLayout();
             this.SuspendLayout();
@@ -187,34 +192,89 @@
             // 
             // grpRecomendados
             // 
-            this.grpRecomendados.Controls.Add(this.checkBox2);
-            this.grpRecomendados.Controls.Add(this.checkBox1);
+            this.grpRecomendados.Controls.Add(this.chkFezCurso);
+            this.grpRecomendados.Controls.Add(this.chkCurso);
+            this.grpRecomendados.Controls.Add(this.chkFaust);
+            this.grpRecomendados.Controls.Add(this.chkYuri);
+            this.grpRecomendados.Controls.Add(this.chkBrutal);
+            this.grpRecomendados.Controls.Add(this.chkMoggador);
+            this.grpRecomendados.Controls.Add(this.chkDev);
             this.grpRecomendados.Location = new System.Drawing.Point(61, 215);
             this.grpRecomendados.Name = "grpRecomendados";
-            this.grpRecomendados.Size = new System.Drawing.Size(200, 168);
+            this.grpRecomendados.Size = new System.Drawing.Size(200, 190);
             this.grpRecomendados.TabIndex = 16;
             this.grpRecomendados.TabStop = false;
             this.grpRecomendados.Text = "RECOMENDAÇÃO";
             // 
-            // checkBox1
+            // chkMoggador
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 34);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkMoggador.AutoSize = true;
+            this.chkMoggador.Location = new System.Drawing.Point(6, 42);
+            this.chkMoggador.Name = "chkMoggador";
+            this.chkMoggador.Size = new System.Drawing.Size(150, 17);
+            this.chkMoggador.TabIndex = 1;
+            this.chkMoggador.Text = "Moggando todos os Betas";
+            this.chkMoggador.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkDev
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(7, 67);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 17);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "checkBox2";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkDev.AutoSize = true;
+            this.chkDev.Location = new System.Drawing.Point(6, 19);
+            this.chkDev.Name = "chkDev";
+            this.chkDev.Size = new System.Drawing.Size(106, 17);
+            this.chkDev.TabIndex = 0;
+            this.chkDev.Text = "Se torne um Dev";
+            this.chkDev.UseVisualStyleBackColor = true;
+            // 
+            // chkBrutal
+            // 
+            this.chkBrutal.AutoSize = true;
+            this.chkBrutal.Location = new System.Drawing.Point(6, 65);
+            this.chkBrutal.Name = "chkBrutal";
+            this.chkBrutal.Size = new System.Drawing.Size(53, 17);
+            this.chkBrutal.TabIndex = 2;
+            this.chkBrutal.Text = "Brutal";
+            this.chkBrutal.UseVisualStyleBackColor = true;
+            // 
+            // chkYuri
+            // 
+            this.chkYuri.AutoSize = true;
+            this.chkYuri.Location = new System.Drawing.Point(6, 88);
+            this.chkYuri.Name = "chkYuri";
+            this.chkYuri.Size = new System.Drawing.Size(164, 17);
+            this.chkYuri.TabIndex = 3;
+            this.chkYuri.Text = "Yuri deserves a Good Ending";
+            this.chkYuri.UseVisualStyleBackColor = true;
+            // 
+            // chkFaust
+            // 
+            this.chkFaust.AutoSize = true;
+            this.chkFaust.Location = new System.Drawing.Point(6, 111);
+            this.chkFaust.Name = "chkFaust";
+            this.chkFaust.Size = new System.Drawing.Size(110, 17);
+            this.chkFaust.TabIndex = 4;
+            this.chkFaust.Text = "Faust my Beloved";
+            this.chkFaust.UseVisualStyleBackColor = true;
+            // 
+            // chkCurso
+            // 
+            this.chkCurso.AutoSize = true;
+            this.chkCurso.Location = new System.Drawing.Point(6, 134);
+            this.chkCurso.Name = "chkCurso";
+            this.chkCurso.Size = new System.Drawing.Size(100, 17);
+            this.chkCurso.TabIndex = 5;
+            this.chkCurso.Text = "Compre o curso";
+            this.chkCurso.UseVisualStyleBackColor = true;
+            // 
+            // chkFezCurso
+            // 
+            this.chkFezCurso.AutoSize = true;
+            this.chkFezCurso.Location = new System.Drawing.Point(6, 157);
+            this.chkFezCurso.Name = "chkFezCurso";
+            this.chkFezCurso.Size = new System.Drawing.Size(90, 17);
+            this.chkFezCurso.TabIndex = 6;
+            this.chkFezCurso.Text = "Eu fiz o curso";
+            this.chkFezCurso.UseVisualStyleBackColor = true;
             // 
             // Pedido
             // 
@@ -267,7 +327,12 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.GroupBox grpRecomendados;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkMoggador;
+        private System.Windows.Forms.CheckBox chkDev;
+        private System.Windows.Forms.CheckBox chkBrutal;
+        private System.Windows.Forms.CheckBox chkYuri;
+        private System.Windows.Forms.CheckBox chkFezCurso;
+        private System.Windows.Forms.CheckBox chkCurso;
+        private System.Windows.Forms.CheckBox chkFaust;
     }
 }
