@@ -73,7 +73,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::ProjetoLivraria.Properties.Resources.don_quixote_111;
-            this.pictureBox9.Location = new System.Drawing.Point(480, 348);
+            this.pictureBox9.Location = new System.Drawing.Point(488, 348);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(92, 125);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -83,7 +83,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::ProjetoLivraria.Properties.Resources._81_jFO1dm8L__UF894_1000_QL80_;
-            this.pictureBox8.Location = new System.Drawing.Point(304, 348);
+            this.pictureBox8.Location = new System.Drawing.Point(312, 348);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(92, 125);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::ProjetoLivraria.Properties.Resources._818uRo_OE0L;
-            this.pictureBox7.Location = new System.Drawing.Point(480, 200);
+            this.pictureBox7.Location = new System.Drawing.Point(488, 191);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(92, 125);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -113,7 +113,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::ProjetoLivraria.Properties.Resources._712mdW4zCcL__UF1000_1000_QL80_;
-            this.pictureBox5.Location = new System.Drawing.Point(304, 191);
+            this.pictureBox5.Location = new System.Drawing.Point(312, 191);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(92, 125);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

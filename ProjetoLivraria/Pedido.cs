@@ -258,16 +258,19 @@ namespace ProjetoLivraria
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            DialogResult sair = MessageBox.Show("Deseja sair ?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-            if (sair == DialogResult.No)
+            DialogResult voltar = MessageBox.Show("Deseja Voltar ao Menu?", "Voltar a Loja", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (voltar == DialogResult.No)
             {
-                Pedido ped = new Pedido();
-                ped.Show();
+                Loja loja = new Loja();
+                loja.Show();
                 this.Hide();
+
             }
             else
             {
-                Application.Exit();
+                Menu menu = new Menu();
+                menu.Show();
+                this.Hide();
             }
         }
     }
