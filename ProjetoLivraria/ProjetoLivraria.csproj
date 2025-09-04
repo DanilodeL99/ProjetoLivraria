@@ -136,6 +136,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -150,6 +151,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51XSRH7EQAL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64fb3d260bc9696e6a5e7ade_cover2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71xiJL+vZRL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81djhqZv9tL._UF894,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51XSRH7EQAL._UF1000,1000_QL80_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64fb3d260bc9696e6a5e7ade_cover21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71xiJL+vZRL._UF1000,1000_QL80_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81djhqZv9tL._UF894,1000_QL80_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81-jFO1dm8L._UF894,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\617WkdpG8xL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\712mdW4zCcL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\818uRo-OE0L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\don-quixote-111.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
