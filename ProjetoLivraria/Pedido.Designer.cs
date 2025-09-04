@@ -173,6 +173,7 @@
             this.btnSalvar.TabIndex = 13;
             this.btnSalvar.Text = "SALVAR";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCalcular
             // 
@@ -209,6 +210,7 @@
             this.grpRecomendados.TabIndex = 16;
             this.grpRecomendados.TabStop = false;
             this.grpRecomendados.Text = "RECOMENDAÇÃO";
+            this.grpRecomendados.Enter += new System.EventHandler(this.grpRecomendados_Enter);
             // 
             // chkMoggador
             // 

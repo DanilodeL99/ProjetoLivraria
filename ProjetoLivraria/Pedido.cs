@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -137,6 +138,69 @@ namespace ProjetoLivraria
             txtValorLivro.Text = Convert.ToString(valorLivro);
             txtValorOpcionais.Text = Convert.ToString(valorOpcao);
             txtTotal.Text = Convert.ToString(valorTotal);
+        }
+
+        private void grpRecomendados_Enter(object sender, EventArgs e)
+        {
+            cmbEscolherLivro.SelectedIndex = -1;
+            txtValorLivro.Clear();
+            txtTotal.Clear();
+            txtValorOpcionais.Clear();
+            chkBrutal.Checked = false;
+            chkCurso.Checked = false;
+            chkFezCurso.Checked = false;
+            chkDev.Checked = false;
+            chkFaust.Checked = false;
+            chkYuri.Checked = false;
+            chkMoggador.Checked = false;
+            chkLimbus.Checked = false;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //VERIFICAR OS CAMPOS
+            if (txtValorLivro.Text == "")
+            {
+                MessageBox.Show("Campos Obrigatório");
+                txtValorLivro.Focus();
+            }
+            else if (txtValorOpcionais.Text == "")
+            {
+                MessageBox.Show("Campos Obrigatório");
+                txtValorOpcionais.Focus();
+            }
+            else if (txtTotal.Text == "")
+            {
+                MessageBox.Show("Campos Obrigatório");
+                txtTotal.Focus();
+            }
+            else
+            {
+                //TRATAMENTO DE ERROS
+                try
+                {
+                    //INSERINDO DADOS NO BANCO DE DADOS
+                    string sql = "insert into tbPedido(tipoPizza,valorPizza,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                    cmd.Parameters.Add("@pizza", MySqlDbType.Text).Value = cmbEscolherLivro.Text;
+                    cmd.Parameters.Add("@vpizza", MySqlDbType.Text).Value = txtValorLivro.Text;
+                    cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = txtValorOpcionais.Text;
+                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtTotal.Text;
+                    cmd.ExecuteNonQuery();
+
+                    MessageBox.Show("Dados cadastrados com Sucesso !!!");
+                    cmbEscolherLivro.Text = "";
+                    txtValorLivro.Text = "";
+                    txtValorOpcionais.Text = "";
+                    txtTotal.Text = "";
+                    cmbEscolherLivro.Focus();
+                    con.DesConnectarBD();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
+            }
         }
     }
 }
