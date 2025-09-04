@@ -255,5 +255,20 @@ namespace ProjetoLivraria
                 dgvPedido.DataSource = null;
             }
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            DialogResult sair = MessageBox.Show("Deseja sair ?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (sair == DialogResult.No)
+            {
+                Pedido ped = new Pedido();
+                ped.Show();
+                this.Hide();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }
 }

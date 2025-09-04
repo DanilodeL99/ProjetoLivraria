@@ -195,6 +195,7 @@
             this.btnSair.TabIndex = 15;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // grpRecomendados
             // 
