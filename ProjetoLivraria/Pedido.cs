@@ -22,7 +22,7 @@ namespace ProjetoLivraria
 
         private void dgvPedido_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+         
         }
 
         private void btnNovo_Click(object sender, EventArgs e)
@@ -180,7 +180,7 @@ namespace ProjetoLivraria
                 try
                 {
                     //INSERINDO DADOS NO BANCO DE DADOS
-                    string sql = "insert into tbPedido(tipoPizza,valorPizza,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
+                    string sql = "insert into tbPedido(nomeLivro,valorLivro,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
                     MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
                     cmd.Parameters.Add("@pizza", MySqlDbType.Text).Value = cmbEscolherLivro.Text;
                     cmd.Parameters.Add("@vpizza", MySqlDbType.Text).Value = txtValorLivro.Text;
@@ -200,6 +200,59 @@ namespace ProjetoLivraria
                 {
                     MessageBox.Show(erro.Message);
                 }
+            }
+        }
+
+        private void dgvPedido_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CarregarPedidos();
+        }
+        public void CarregarPedidos()
+        {
+            try
+            {
+                txtCodigo.Text = dgvPedido.SelectedRows[0].Cells[0].Value.ToString();
+                cmbEscolherLivro.Text = dgvPedido.SelectedRows[0].Cells[1].Value.ToString();
+                txtValorLivro.Text = dgvPedido.SelectedRows[0].Cells[2].Value.ToString();
+                txtValorOpcionais.Text = dgvPedido.SelectedRows[0].Cells[3].Value.ToString();
+                txtTotal.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
+
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Erros ao clicar" + error);
+            }
+
+        }
+
+        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPesquisar.Text != "")
+            {
+                try
+                {
+                    con.ConnectarBD();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText = "select * from tbPedido";
+
+
+                    cmd.Connection = con.ConnectarBD();
+                    MySqlDataAdapter da = new MySqlDataAdapter();
+                    DataTable dt = new DataTable();
+                    da.SelectCommand = cmd;
+                    da.Fill(dt);
+                    dgvPedido.DataSource = dt;
+                    con.ConnectarBD();
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.Message);
+                }
+            }
+            else
+            {
+                //DEIXA O DATAGRID LIMPAR
+                dgvPedido.DataSource = null;
             }
         }
     }

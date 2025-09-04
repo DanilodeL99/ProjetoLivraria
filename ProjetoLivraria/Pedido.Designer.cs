@@ -106,6 +106,7 @@
             this.dgvPedido.Size = new System.Drawing.Size(399, 168);
             this.dgvPedido.TabIndex = 5;
             this.dgvPedido.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedido_CellContentClick);
+            this.dgvPedido.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPedido_CellDoubleClick);
             // 
             // lblTotal
             // 
@@ -154,6 +155,7 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
             this.txtPesquisar.TabIndex = 11;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // btnNovo
             // 
