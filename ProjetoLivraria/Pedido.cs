@@ -47,14 +47,17 @@ namespace ProjetoLivraria
             cmbEscolherLivro.Items.Add("Goethe's Faust - R$ 101,20");
             cmbEscolherLivro.Items.Add("Don Quixote - R$ 29,90");
             cmbEscolherLivro.Items.Add("Hell Screen(地獄変, Jigokuhen) - R$ 137,00");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
-            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("The Stranger(Albert Camus) - R$ 84,00");
+            cmbEscolherLivro.Items.Add("Dream of the Red Chamber - R$ 109,00");
+            cmbEscolherLivro.Items.Add("Wuthering Heights - R$ 57,90");
+            cmbEscolherLivro.Items.Add("Moby-Dick - R$ 91,00");
+            cmbEscolherLivro.Items.Add("Inferno (Dante) - R$ 72,00");
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
