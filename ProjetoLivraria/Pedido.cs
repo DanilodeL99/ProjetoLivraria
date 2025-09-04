@@ -57,7 +57,86 @@ namespace ProjetoLivraria
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            double valorLivro = 0;
+            double valorOpcao = 0;
+            double valorTotal = 0;
 
+            if (cmbEscolherLivro.SelectedIndex == 0)
+            {
+                valorLivro = 122;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 1)
+            {
+                valorLivro = 101;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 2)
+            {
+                valorLivro = 29;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 3)
+            {
+                valorLivro = 137;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 4)
+            {
+                valorLivro = 84;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 5)
+            {
+                valorLivro = 109;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 6)
+            {
+                valorLivro = 57;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 7)
+            {
+                valorLivro = 91;
+            }
+            else if (cmbEscolherLivro.SelectedIndex == 8)
+            {
+                valorLivro = 72;
+            }
+            if (chkCurso.Checked == true)
+            {
+                valorOpcao = valorOpcao + 5;
+            }
+            if (chkBrutal.Checked == true)
+            {
+                valorOpcao = valorOpcao + 6;
+            }
+            if (chkDev.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkFaust.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkFezCurso.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkLimbus.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            if (chkMoggador.Checked == true)
+            {
+                valorOpcao = valorOpcao + 3;
+            }
+            if (chkYuri.Checked == true)
+            {
+                valorOpcao = valorOpcao + 4;
+            }
+            else
+            {
+
+            }
+            valorTotal = valorLivro + valorOpcao;
+            txtValorLivro.Text = Convert.ToString(valorLivro);
+            txtValorOpcionais.Text = Convert.ToString(valorOpcao);
+            txtTotal.Text = Convert.ToString(valorTotal);
         }
     }
 }
