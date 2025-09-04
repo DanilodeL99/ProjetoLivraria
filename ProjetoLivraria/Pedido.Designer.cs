@@ -52,6 +52,7 @@
             this.chkFaust = new System.Windows.Forms.CheckBox();
             this.chkCurso = new System.Windows.Forms.CheckBox();
             this.chkFezCurso = new System.Windows.Forms.CheckBox();
+            this.chkLimbus = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.grpRecomendados.SuspendLayout();
             this.SuspendLayout();
@@ -68,14 +69,14 @@
             this.lblValorLivro.AutoSize = true;
             this.lblValorLivro.Location = new System.Drawing.Point(344, 46);
             this.lblValorLivro.Name = "lblValorLivro";
-            this.lblValorLivro.Size = new System.Drawing.Size(104, 13);
+            this.lblValorLivro.Size = new System.Drawing.Size(78, 13);
             this.lblValorLivro.TabIndex = 1;
-            this.lblValorLivro.Text = "VALOR OPCIONAIS";
+            this.lblValorLivro.Text = "VALOR LIVRO";
             // 
             // lblValorOpcionais
             // 
             this.lblValorOpcionais.AutoSize = true;
-            this.lblValorOpcionais.Location = new System.Drawing.Point(553, 46);
+            this.lblValorOpcionais.Location = new System.Drawing.Point(492, 46);
             this.lblValorOpcionais.Name = "lblValorOpcionais";
             this.lblValorOpcionais.Size = new System.Drawing.Size(104, 13);
             this.lblValorOpcionais.TabIndex = 2;
@@ -83,7 +84,7 @@
             // 
             // txtValorOpcionais
             // 
-            this.txtValorOpcionais.Location = new System.Drawing.Point(546, 83);
+            this.txtValorOpcionais.Location = new System.Drawing.Point(495, 83);
             this.txtValorOpcionais.Name = "txtValorOpcionais";
             this.txtValorOpcionais.Size = new System.Drawing.Size(100, 20);
             this.txtValorOpcionais.TabIndex = 3;
@@ -93,7 +94,7 @@
             this.cmbEscolherLivro.FormattingEnabled = true;
             this.cmbEscolherLivro.Location = new System.Drawing.Point(61, 46);
             this.cmbEscolherLivro.Name = "cmbEscolherLivro";
-            this.cmbEscolherLivro.Size = new System.Drawing.Size(183, 21);
+            this.cmbEscolherLivro.Size = new System.Drawing.Size(254, 21);
             this.cmbEscolherLivro.TabIndex = 4;
             this.cmbEscolherLivro.Text = "ESCOLHA ALGUM LIVRO";
             // 
@@ -109,7 +110,7 @@
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(695, 46);
+            this.lblTotal.Location = new System.Drawing.Point(648, 46);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(93, 13);
             this.lblTotal.TabIndex = 6;
@@ -135,7 +136,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(688, 83);
+            this.txtTotal.Location = new System.Drawing.Point(651, 83);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
             this.txtTotal.TabIndex = 9;
@@ -162,6 +163,7 @@
             this.btnNovo.TabIndex = 12;
             this.btnNovo.Text = "NOVO";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // btnSalvar
             // 
@@ -192,6 +194,7 @@
             // 
             // grpRecomendados
             // 
+            this.grpRecomendados.Controls.Add(this.chkLimbus);
             this.grpRecomendados.Controls.Add(this.chkFezCurso);
             this.grpRecomendados.Controls.Add(this.chkCurso);
             this.grpRecomendados.Controls.Add(this.chkFaust);
@@ -201,7 +204,7 @@
             this.grpRecomendados.Controls.Add(this.chkDev);
             this.grpRecomendados.Location = new System.Drawing.Point(61, 215);
             this.grpRecomendados.Name = "grpRecomendados";
-            this.grpRecomendados.Size = new System.Drawing.Size(200, 190);
+            this.grpRecomendados.Size = new System.Drawing.Size(200, 203);
             this.grpRecomendados.TabIndex = 16;
             this.grpRecomendados.TabStop = false;
             this.grpRecomendados.Text = "RECOMENDAÇÃO";
@@ -259,7 +262,7 @@
             // chkCurso
             // 
             this.chkCurso.AutoSize = true;
-            this.chkCurso.Location = new System.Drawing.Point(6, 134);
+            this.chkCurso.Location = new System.Drawing.Point(6, 157);
             this.chkCurso.Name = "chkCurso";
             this.chkCurso.Size = new System.Drawing.Size(100, 17);
             this.chkCurso.TabIndex = 5;
@@ -269,12 +272,22 @@
             // chkFezCurso
             // 
             this.chkFezCurso.AutoSize = true;
-            this.chkFezCurso.Location = new System.Drawing.Point(6, 157);
+            this.chkFezCurso.Location = new System.Drawing.Point(6, 180);
             this.chkFezCurso.Name = "chkFezCurso";
             this.chkFezCurso.Size = new System.Drawing.Size(90, 17);
             this.chkFezCurso.TabIndex = 6;
             this.chkFezCurso.Text = "Eu fiz o curso";
             this.chkFezCurso.UseVisualStyleBackColor = true;
+            // 
+            // chkLimbus
+            // 
+            this.chkLimbus.AutoSize = true;
+            this.chkLimbus.Location = new System.Drawing.Point(6, 134);
+            this.chkLimbus.Name = "chkLimbus";
+            this.chkLimbus.Size = new System.Drawing.Size(159, 17);
+            this.chkLimbus.TabIndex = 7;
+            this.chkLimbus.Text = "Limbus Company Mentioned";
+            this.chkLimbus.UseVisualStyleBackColor = true;
             // 
             // Pedido
             // 
@@ -300,6 +313,7 @@
             this.Controls.Add(this.txtValorLivro);
             this.Name = "Pedido";
             this.Text = "Pedido";
+            this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpRecomendados.ResumeLayout(false);
             this.grpRecomendados.PerformLayout();
@@ -334,5 +348,6 @@
         private System.Windows.Forms.CheckBox chkFezCurso;
         private System.Windows.Forms.CheckBox chkCurso;
         private System.Windows.Forms.CheckBox chkFaust;
+        private System.Windows.Forms.CheckBox chkLimbus;
     }
 }

@@ -12,6 +12,8 @@ namespace ProjetoLivraria
 {
     public partial class Pedido : Form
     {
+        //INSTANCIANDO A CLASSE DE CONEXÂO
+        Conexao con = new Conexao();
         public Pedido()
         {
             InitializeComponent();
@@ -20,6 +22,39 @@ namespace ProjetoLivraria
         private void dgvPedido_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            chkBrutal.Checked = false;
+            chkCurso.Checked = false;
+            chkFezCurso.Checked = false;
+            chkDev.Checked = false;
+            chkFaust.Checked = false;
+            chkYuri.Checked = false;
+            chkMoggador.Checked = false;
+            chkLimbus.Checked = false;
+
+            txtValorOpcionais.Clear();
+            txtTotal.Clear();
+            txtValorLivro.Clear();
+            cmbEscolherLivro.SelectedIndex = 0;
+        }
+
+        private void Pedido_Load(object sender, EventArgs e)
+        {
+            cmbEscolherLivro.Items.Add("The Wings(Yi Sang) - R$ 122,22");
+            cmbEscolherLivro.Items.Add("Goethe's Faust - R$ 101,20");
+            cmbEscolherLivro.Items.Add("Don Quixote - R$ 29,90");
+            cmbEscolherLivro.Items.Add("Hell Screen(地獄変, Jigokuhen) - R$ 137,00");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
+            cmbEscolherLivro.Items.Add("");
         }
     }
 }
