@@ -99,6 +99,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexao.cs" />
+    <Compile Include="Faust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faust.Designer.cs">
+      <DependentUpon>Faust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hell.Designer.cs">
+      <DependentUpon>Hell.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loja.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Yisang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yisang.Designer.cs">
+      <DependentUpon>Yisang.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Hell.resx">
+      <DependentUpon>Hell.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loja.resx">
       <DependentUpon>Loja.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +159,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Yisang.resx">
+      <DependentUpon>Yisang.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -29,17 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Loja));
-            this.btnPedido = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblWings = new System.Windows.Forms.Label();
             this.lblHellS = new System.Windows.Forms.Label();
@@ -50,28 +40,25 @@
             this.lblDante = new System.Windows.Forms.Label();
             this.lblWuthering = new System.Windows.Forms.Label();
             this.lblDon = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pbDon = new System.Windows.Forms.PictureBox();
+            this.pbCatherine = new System.Windows.Forms.PictureBox();
+            this.pbHongLu = new System.Windows.Forms.PictureBox();
+            this.pbFaust = new System.Windows.Forms.PictureBox();
+            this.pbDick = new System.Windows.Forms.PictureBox();
+            this.pbHell = new System.Windows.Forms.PictureBox();
+            this.pbMersault = new System.Windows.Forms.PictureBox();
+            this.pbDante = new System.Windows.Forms.PictureBox();
+            this.pbWings = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCatherine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHongLu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFaust)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDick)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHell)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMersault)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDante)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWings)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnPedido
-            // 
-            this.btnPedido.BackColor = System.Drawing.Color.PaleGoldenrod;
-            this.btnPedido.Location = new System.Drawing.Point(620, 24);
-            this.btnPedido.Name = "btnPedido";
-            this.btnPedido.Size = new System.Drawing.Size(158, 42);
-            this.btnPedido.TabIndex = 0;
-            this.btnPedido.TabStop = false;
-            this.btnPedido.Text = "IR PARA O PEDIDO";
-            this.btnPedido.UseVisualStyleBackColor = false;
-            this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
             // 
             // btnVoltar
             // 
@@ -85,105 +72,6 @@
             this.btnVoltar.Text = "VOLTAR";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox9.Image = global::ProjetoLivraria.Properties.Resources.don_quixote_111;
-            this.pictureBox9.Location = new System.Drawing.Point(488, 507);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 10;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox8.Image = global::ProjetoLivraria.Properties.Resources._81_jFO1dm8L__UF894_1000_QL80_;
-            this.pictureBox8.Location = new System.Drawing.Point(312, 507);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 9;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox7.Image = global::ProjetoLivraria.Properties.Resources._818uRo_OE0L;
-            this.pictureBox7.Location = new System.Drawing.Point(488, 299);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 8;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox6.Image = global::ProjetoLivraria.Properties.Resources._71xiJL_vZRL__UF1000_1000_QL80_;
-            this.pictureBox6.Location = new System.Drawing.Point(488, 100);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 7;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox5.Image = global::ProjetoLivraria.Properties.Resources._712mdW4zCcL__UF1000_1000_QL80_;
-            this.pictureBox5.Location = new System.Drawing.Point(312, 299);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 6;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = global::ProjetoLivraria.Properties.Resources._64fb3d260bc9696e6a5e7ade_cover2;
-            this.pictureBox4.Location = new System.Drawing.Point(312, 100);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox3.Image = global::ProjetoLivraria.Properties.Resources._617WkdpG8xL;
-            this.pictureBox3.Location = new System.Drawing.Point(122, 299);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::ProjetoLivraria.Properties.Resources._81djhqZv9tL__UF894_1000_QL80_;
-            this.pictureBox2.Location = new System.Drawing.Point(122, 507);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::ProjetoLivraria.Properties.Resources._51XSRH7EQAL__UF1000_1000_QL80_;
-            this.pictureBox1.Location = new System.Drawing.Point(122, 100);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 125);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // lblTitulo
             // 
@@ -289,6 +177,107 @@
             this.lblDon.TabIndex = 20;
             this.lblDon.Text = "Don Quixote";
             // 
+            // pbDon
+            // 
+            this.pbDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDon.Image = global::ProjetoLivraria.Properties.Resources.don_quixote_111;
+            this.pbDon.Location = new System.Drawing.Point(488, 507);
+            this.pbDon.Name = "pbDon";
+            this.pbDon.Size = new System.Drawing.Size(92, 125);
+            this.pbDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDon.TabIndex = 10;
+            this.pbDon.TabStop = false;
+            // 
+            // pbCatherine
+            // 
+            this.pbCatherine.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbCatherine.Image = global::ProjetoLivraria.Properties.Resources._81_jFO1dm8L__UF894_1000_QL80_;
+            this.pbCatherine.Location = new System.Drawing.Point(312, 507);
+            this.pbCatherine.Name = "pbCatherine";
+            this.pbCatherine.Size = new System.Drawing.Size(92, 125);
+            this.pbCatherine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCatherine.TabIndex = 9;
+            this.pbCatherine.TabStop = false;
+            // 
+            // pbHongLu
+            // 
+            this.pbHongLu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbHongLu.Image = global::ProjetoLivraria.Properties.Resources._818uRo_OE0L;
+            this.pbHongLu.Location = new System.Drawing.Point(488, 299);
+            this.pbHongLu.Name = "pbHongLu";
+            this.pbHongLu.Size = new System.Drawing.Size(92, 125);
+            this.pbHongLu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbHongLu.TabIndex = 8;
+            this.pbHongLu.TabStop = false;
+            // 
+            // pbFaust
+            // 
+            this.pbFaust.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbFaust.Image = global::ProjetoLivraria.Properties.Resources._71xiJL_vZRL__UF1000_1000_QL80_;
+            this.pbFaust.Location = new System.Drawing.Point(488, 100);
+            this.pbFaust.Name = "pbFaust";
+            this.pbFaust.Size = new System.Drawing.Size(92, 125);
+            this.pbFaust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbFaust.TabIndex = 7;
+            this.pbFaust.TabStop = false;
+            // 
+            // pbDick
+            // 
+            this.pbDick.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDick.Image = global::ProjetoLivraria.Properties.Resources._712mdW4zCcL__UF1000_1000_QL80_;
+            this.pbDick.Location = new System.Drawing.Point(312, 299);
+            this.pbDick.Name = "pbDick";
+            this.pbDick.Size = new System.Drawing.Size(92, 125);
+            this.pbDick.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDick.TabIndex = 6;
+            this.pbDick.TabStop = false;
+            // 
+            // pbHell
+            // 
+            this.pbHell.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbHell.Image = global::ProjetoLivraria.Properties.Resources._64fb3d260bc9696e6a5e7ade_cover2;
+            this.pbHell.Location = new System.Drawing.Point(312, 100);
+            this.pbHell.Name = "pbHell";
+            this.pbHell.Size = new System.Drawing.Size(92, 125);
+            this.pbHell.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbHell.TabIndex = 5;
+            this.pbHell.TabStop = false;
+            this.pbHell.Click += new System.EventHandler(this.pbHell_Click);
+            // 
+            // pbMersault
+            // 
+            this.pbMersault.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMersault.Image = global::ProjetoLivraria.Properties.Resources._617WkdpG8xL;
+            this.pbMersault.Location = new System.Drawing.Point(122, 299);
+            this.pbMersault.Name = "pbMersault";
+            this.pbMersault.Size = new System.Drawing.Size(92, 125);
+            this.pbMersault.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMersault.TabIndex = 4;
+            this.pbMersault.TabStop = false;
+            // 
+            // pbDante
+            // 
+            this.pbDante.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDante.Image = global::ProjetoLivraria.Properties.Resources._81djhqZv9tL__UF894_1000_QL80_;
+            this.pbDante.Location = new System.Drawing.Point(122, 507);
+            this.pbDante.Name = "pbDante";
+            this.pbDante.Size = new System.Drawing.Size(92, 125);
+            this.pbDante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDante.TabIndex = 3;
+            this.pbDante.TabStop = false;
+            // 
+            // pbWings
+            // 
+            this.pbWings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbWings.Image = global::ProjetoLivraria.Properties.Resources._51XSRH7EQAL__UF1000_1000_QL80_;
+            this.pbWings.Location = new System.Drawing.Point(122, 100);
+            this.pbWings.Name = "pbWings";
+            this.pbWings.Size = new System.Drawing.Size(92, 125);
+            this.pbWings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbWings.TabIndex = 2;
+            this.pbWings.TabStop = false;
+            this.pbWings.Click += new System.EventHandler(this.pbWings_Click);
+            // 
             // Loja
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,48 +294,45 @@
             this.Controls.Add(this.lblHellS);
             this.Controls.Add(this.lblWings);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbDon);
+            this.Controls.Add(this.pbCatherine);
+            this.Controls.Add(this.pbHongLu);
+            this.Controls.Add(this.pbFaust);
+            this.Controls.Add(this.pbDick);
+            this.Controls.Add(this.pbHell);
+            this.Controls.Add(this.pbMersault);
+            this.Controls.Add(this.pbDante);
+            this.Controls.Add(this.pbWings);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnPedido);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Loja";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Loja";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCatherine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHongLu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFaust)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDick)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHell)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMersault)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDante)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWings)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnPedido;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pbWings;
+        private System.Windows.Forms.PictureBox pbDante;
+        private System.Windows.Forms.PictureBox pbMersault;
+        private System.Windows.Forms.PictureBox pbHell;
+        private System.Windows.Forms.PictureBox pbDick;
+        private System.Windows.Forms.PictureBox pbFaust;
+        private System.Windows.Forms.PictureBox pbHongLu;
+        private System.Windows.Forms.PictureBox pbCatherine;
+        private System.Windows.Forms.PictureBox pbDon;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblWings;
         private System.Windows.Forms.Label lblHellS;

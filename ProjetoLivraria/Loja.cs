@@ -35,5 +35,19 @@ namespace ProjetoLivraria
         {
 
         }
+
+        private void pbWings_Click(object sender, EventArgs e)
+        {
+            Yisang wings = new Yisang();
+            wings.Show();
+            this.Hide();
+        }
+
+        private void pbHell_Click(object sender, EventArgs e)
+        {
+            Hell hell = new Hell();
+            hell.Show();
+            this.Hide();
+        }
     }
 }
