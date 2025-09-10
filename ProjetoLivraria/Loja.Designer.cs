@@ -62,7 +62,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnVoltar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Location = new System.Drawing.Point(620, 619);
             this.btnVoltar.Name = "btnVoltar";
@@ -220,6 +220,7 @@
             this.pbFaust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbFaust.TabIndex = 7;
             this.pbFaust.TabStop = false;
+            this.pbFaust.Click += new System.EventHandler(this.pbFaust_Click);
             // 
             // pbDick
             // 
@@ -282,7 +283,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(800, 678);
             this.Controls.Add(this.lblDon);
             this.Controls.Add(this.lblWuthering);

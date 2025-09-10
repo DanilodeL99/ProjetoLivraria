@@ -37,9 +37,9 @@
             // 
             // btnLista
             // 
-            this.btnLista.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnLista.BackColor = System.Drawing.Color.FloralWhite;
             this.btnLista.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLista.Location = new System.Drawing.Point(321, 156);
+            this.btnLista.Location = new System.Drawing.Point(298, 137);
             this.btnLista.Name = "btnLista";
             this.btnLista.Size = new System.Drawing.Size(198, 79);
             this.btnLista.TabIndex = 0;
@@ -50,9 +50,9 @@
             // 
             // btnPedido
             // 
-            this.btnPedido.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnPedido.BackColor = System.Drawing.Color.FloralWhite;
             this.btnPedido.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPedido.Location = new System.Drawing.Point(321, 302);
+            this.btnPedido.Location = new System.Drawing.Point(298, 283);
             this.btnPedido.Name = "btnPedido";
             this.btnPedido.Size = new System.Drawing.Size(198, 79);
             this.btnPedido.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // btnSair
             // 
-            this.btnSair.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnSair.BackColor = System.Drawing.Color.FloralWhite;
             this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Location = new System.Drawing.Point(12, 22);
             this.btnSair.Name = "btnSair";
@@ -81,7 +81,7 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Enabled = false;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(248, 22);
+            this.lblTitulo.Location = new System.Drawing.Point(238, 22);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(327, 42);
             this.lblTitulo.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnSair);

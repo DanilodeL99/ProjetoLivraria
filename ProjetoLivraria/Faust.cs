@@ -16,5 +16,20 @@ namespace ProjetoLivraria
         {
             InitializeComponent();
         }
+
+        private void btnPedir_Click(object sender, EventArgs e)
+        {
+            Pedido pedido = new Pedido();
+            pedido.Show();
+            this.Hide();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Loja loja = new Loja();
+            loja.Show();
+            this.Hide();
+
+        }
     }
 }

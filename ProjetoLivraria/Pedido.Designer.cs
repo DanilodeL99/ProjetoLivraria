@@ -97,6 +97,7 @@
             // 
             // cmbEscolherLivro
             // 
+            this.cmbEscolherLivro.BackColor = System.Drawing.Color.WhiteSmoke;
             this.cmbEscolherLivro.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEscolherLivro.FormattingEnabled = true;
             this.cmbEscolherLivro.Location = new System.Drawing.Point(61, 78);
@@ -108,7 +109,7 @@
             // 
             // dgvPedido
             // 
-            this.dgvPedido.BackgroundColor = System.Drawing.Color.PaleGoldenrod;
+            this.dgvPedido.BackgroundColor = System.Drawing.Color.FloralWhite;
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPedido.Location = new System.Drawing.Point(352, 315);
             this.dgvPedido.Name = "dgvPedido";
@@ -165,6 +166,7 @@
             // 
             // txtPesquisar
             // 
+            this.txtPesquisar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtPesquisar.Location = new System.Drawing.Point(637, 239);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(100, 20);
@@ -174,7 +176,7 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnNovo.BackColor = System.Drawing.Color.FloralWhite;
             this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNovo.Location = new System.Drawing.Point(349, 614);
             this.btnNovo.Name = "btnNovo";
@@ -187,7 +189,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnSalvar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalvar.Location = new System.Drawing.Point(450, 614);
             this.btnSalvar.Name = "btnSalvar";
@@ -200,7 +202,7 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnCalcular.BackColor = System.Drawing.Color.FloralWhite;
             this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalcular.Location = new System.Drawing.Point(551, 614);
             this.btnCalcular.Name = "btnCalcular";
@@ -213,7 +215,7 @@
             // 
             // btnVoltar
             // 
-            this.btnVoltar.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.btnVoltar.BackColor = System.Drawing.Color.FloralWhite;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.Location = new System.Drawing.Point(656, 614);
             this.btnVoltar.Name = "btnVoltar";
@@ -226,7 +228,7 @@
             // 
             // grpRecomendados
             // 
-            this.grpRecomendados.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.grpRecomendados.BackColor = System.Drawing.Color.FloralWhite;
             this.grpRecomendados.Controls.Add(this.chkLimbus);
             this.grpRecomendados.Controls.Add(this.chkFezCurso);
             this.grpRecomendados.Controls.Add(this.chkCurso);
@@ -241,7 +243,7 @@
             this.grpRecomendados.Size = new System.Drawing.Size(254, 359);
             this.grpRecomendados.TabIndex = 16;
             this.grpRecomendados.TabStop = false;
-            this.grpRecomendados.Text = "RECOMENDAÇÃO";
+            this.grpRecomendados.Text = "RECOMENDAÇÃO e-books";
             this.grpRecomendados.Enter += new System.EventHandler(this.grpRecomendados_Enter);
             // 
             // chkLimbus
@@ -362,7 +364,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Khaki;
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
             this.ClientSize = new System.Drawing.Size(800, 678);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grpRecomendados);

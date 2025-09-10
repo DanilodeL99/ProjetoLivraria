@@ -49,5 +49,12 @@ namespace ProjetoLivraria
             hell.Show();
             this.Hide();
         }
+
+        private void pbFaust_Click(object sender, EventArgs e)
+        {
+            Faust faust = new Faust();
+            faust.Show();
+            this.Hide();
+        }
     }
 }

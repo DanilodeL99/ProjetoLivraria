@@ -137,6 +137,9 @@
     <Compile Include="Yisang.Designer.cs">
       <DependentUpon>Yisang.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Faust.resx">
+      <DependentUpon>Faust.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hell.resx">
       <DependentUpon>Hell.cs</DependentUpon>
     </EmbeddedResource>

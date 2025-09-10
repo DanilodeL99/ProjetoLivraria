@@ -46,7 +46,7 @@ namespace ProjetoLivraria
             DialogResult sair = MessageBox.Show("Deseja sair ?", "Sair", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (sair == DialogResult.No)
             {
-                Pedido ped = new Pedido();
+                Menu ped = new Menu();
                 ped.Show();
                 this.Hide();
             }
