@@ -30,5 +30,10 @@ namespace ProjetoLivraria
             menu.Show();
             this.Hide();
         }
+
+        private void lblMoby_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
