@@ -1,4 +1,4 @@
-﻿//using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -180,13 +180,13 @@ namespace ProjetoLivraria
                 try
                 {
                     //INSERINDO DADOS NO BANCO DE DADOS
-                    //string sql = "insert into tbPedido(nomeLivro,valorLivro,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
-                    //MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
-                    //cmd.Parameters.Add("@pizza", MySqlDbType.Text).Value = cmbEscolherLivro.Text;
-                    //cmd.Parameters.Add("@vpizza", MySqlDbType.Text).Value = txtValorLivro.Text;
-                    //cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = txtValorOpcionais.Text;
-                    //cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtTotal.Text;
-                    //cmd.ExecuteNonQuery();
+                    string sql = "insert into tbPedido(nomeLivro,valorLivro,valorOpcao,valorTotal) values(@pizza,@vpizza,@vopcao,@total)";
+                    MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                    cmd.Parameters.Add("@pizza", MySqlDbType.Text).Value = cmbEscolherLivro.Text;
+                    cmd.Parameters.Add("@vpizza", MySqlDbType.Text).Value = txtValorLivro.Text;
+                    cmd.Parameters.Add("@vopcao", MySqlDbType.Text).Value = txtValorOpcionais.Text;
+                    cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtTotal.Text;
+                    cmd.ExecuteNonQuery();
 
                     MessageBox.Show("Dados cadastrados com Sucesso !!!");
                     cmbEscolherLivro.Text = "";
@@ -232,17 +232,17 @@ namespace ProjetoLivraria
                 try
                 {
                     con.ConnectarBD();
-                    ////MySqlCommand cmd = new MySqlCommand();
-                    //cmd.CommandText = "select * from tbPedido";
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText = "select * from tbPedido";
 
 
-                    //cmd.Connection = con.ConnectarBD();
-                    //MySqlDataAdapter da = new MySqlDataAdapter();
-                    //DataTable dt = new DataTable();
-                    //da.SelectCommand = cmd;
-                    //da.Fill(dt);
-                    //dgvPedido.DataSource = dt;
-                    //con.ConnectarBD();
+                    cmd.Connection = con.ConnectarBD();
+                    MySqlDataAdapter da = new MySqlDataAdapter();
+                    DataTable dt = new DataTable();
+                    da.SelectCommand = cmd;
+                    da.Fill(dt);
+                    dgvPedido.DataSource = dt;
+                    con.ConnectarBD();
                 }
                 catch (Exception error)
                 {
